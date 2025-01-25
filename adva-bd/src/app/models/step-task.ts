@@ -12,6 +12,7 @@ export interface StepTaskBless {
 export interface StepTaskImage {
     readonly type: 'Image';
     readonly url: string;
+    readonly caption: string;
 }
 
 export interface StepTaskGift {
@@ -20,7 +21,7 @@ export interface StepTaskGift {
 }
 
 export type StepTask = (StepTaskQuestion | StepTaskBless | StepTaskImage | StepTaskGift) & {
-    readonly theme: '#a600ff' | '#00b0ff' | '#00ff6a';
+    readonly theme: '#a600ff' | '#00b0ff' | '#00ff6a' | '#ff006a' | 'brown' | 'pink' | 'blue' | 'green' | 'orange' | 'purple';
     readonly done: boolean;
 };
 

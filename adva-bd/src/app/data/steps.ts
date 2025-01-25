@@ -6,7 +6,8 @@ export const STEPS: StepTask[] = [
         type: 'Image', 
         url: 'images/ronni-1.jpg',
         done: false, 
-        theme: '#a600ff'
+        theme: 'orange', 
+        caption: 'אמא שלי ואני במטוס'
     }, 
     {
         type: 'Question', 
@@ -18,7 +19,8 @@ export const STEPS: StepTask[] = [
         type: 'Image', 
         url: 'images/ronni-2.jpg',
         done: false, 
-        theme: '#a600ff'
+        theme: '#ff006a', 
+        caption: 'אני אוהבת לטוס עם אמא שלי'
     }, 
     {
         type: 'Question',
@@ -30,13 +32,14 @@ export const STEPS: StepTask[] = [
         type: 'Image', 
         url: 'images/ronni-3.jpg',
         done: false, 
-        theme: '#a600ff'
+        theme: '#00ff6a', 
+        caption: 'מתייפיפות לנו באמסטרדם'
     }, 
     {
         type: 'Question',
         done: false,
         ...QUESTIONS[2], 
-        theme: '#00ff6a'
+        theme: 'purple'
     }, 
     {
         type: 'Bless', 
@@ -59,7 +62,8 @@ export const STEPS: StepTask[] = [
         type: 'Image', 
         url: 'images/elad-1.jpg',
         done: false, 
-        theme: '#a600ff'
+        theme: '#a600ff', 
+        caption: 'איזה יפים אנחנו'
     }, 
     {
         type: 'Question',
@@ -71,7 +75,8 @@ export const STEPS: StepTask[] = [
         type: 'Image', 
         url: 'images/elad-2.jpg',
         done: false, 
-        theme: '#a600ff'
+        theme: '#a600ff', 
+        caption: 'ברגע של איכות ביחד'
     }, 
     {
         type: 'Question',
@@ -83,7 +88,8 @@ export const STEPS: StepTask[] = [
         type: 'Image', 
         url: 'images/elad-3.jpg',
         done: false, 
-        theme: '#a600ff'
+        theme: '#a600ff', 
+        caption: 'חיים שלי בלב...'
     }, 
     {
         type: 'Question',
@@ -112,7 +118,8 @@ export const STEPS: StepTask[] = [
         type: 'Image', 
         url: 'images/kobi-1.jpg',
         done: false, 
-        theme: '#a600ff'
+        theme: '#a600ff', 
+        caption: 'איזה כיףףףף לנו'
     }, 
     {
         type: 'Question',
@@ -124,7 +131,9 @@ export const STEPS: StepTask[] = [
         type: 'Image', 
         url: 'images/kobi-2.jpg',
         done: false, 
-        theme: '#a600ff'
+        theme: '#a600ff',
+        caption: 'בשמלה אדומה ושתי צמות, ואדוה לידי'
+
     }, 
     {
         type: 'Question',
@@ -136,7 +145,8 @@ export const STEPS: StepTask[] = [
         type: 'Image', 
         url: 'images/kobi-3.jpg',
         done: false, 
-        theme: '#a600ff'
+        theme: '#a600ff', 
+        caption: 'פארטי בייבי!'
     }, 
     {
         type: 'Question',
@@ -148,7 +158,8 @@ export const STEPS: StepTask[] = [
         type: 'Image', 
         url: 'images/kobi-4.jpg',
         done: false, 
-        theme: '#a600ff'
+        theme: '#a600ff', 
+        caption: 'לחייך, הטיימר על 3 שניות...'
     }, 
     {
         type: 'Question',

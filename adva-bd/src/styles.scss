@@ -70,6 +70,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   --base-color: #00ff6a;
 }
 
+.red {
+  --base-color: #ff006a;
+}
+
 body {
   display: flex;
   flex-direction: column;
