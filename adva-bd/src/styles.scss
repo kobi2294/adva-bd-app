@@ -17,3 +17,41 @@ html {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  --base-color: #a600ff;
+  --p-50: oklch(from var(--base-color)  98% 0.03 h);
+  --p-100: oklch(from var(--base-color) 92% 0.05 h);
+  --p-200: oklch(from var(--base-color) 86% 0.06 h);
+  --p-300: oklch(from var(--base-color) 74% 0.08 h);
+  --p-400: oklch(from var(--base-color) 58% 0.11 h);
+  --p-500: oklch(from var(--base-color) 40% 0.14 h);
+  --p-600: oklch(from var(--base-color) 32% 0.11 h);
+  --p-700: oklch(from var(--base-color) 24% 0.08 h);
+  --p-800: oklch(from var(--base-color) 16% 0.06 h);
+  --p-900: oklch(from var(--base-color) 08% 0.05 h);
+}
+
+.theme {
+  --p-50: oklch(from var(--base-color)  98% 0.03 h);
+  --p-100: oklch(from var(--base-color) 92% 0.05 h);
+  --p-200: oklch(from var(--base-color) 86% 0.06 h);
+  --p-300: oklch(from var(--base-color) 74% 0.08 h);
+  --p-400: oklch(from var(--base-color) 58% 0.11 h);
+  --p-500: oklch(from var(--base-color) 40% 0.14 h);
+  --p-600: oklch(from var(--base-color) 32% 0.11 h);
+  --p-700: oklch(from var(--base-color) 24% 0.08 h);
+  --p-800: oklch(from var(--base-color) 16% 0.06 h);
+  --p-900: oklch(from var(--base-color) 08% 0.05 h);
+}
+
+.purple {
+  --base-color: #a600ff;
+}
+
+.blue {
+  --base-color: #00b0ff;
+}
+
+body {
+}
