@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { EladComponent } from "./blesses/elad/elad.component";
-import { RonniComponent } from "./blesses/ronni/ronni.component";
-import { KobiComponent } from './blesses/kobi/kobi.component';
+import { Component, inject } from '@angular/core';
+import { AppStore } from './store/app.store';
+import { ImageComponent } from './components/image/image.component';
+import { QuestionComponent } from './components/question/question.component';
+import { GiftComponent } from './components/gift/gift.component';
+import { BlessComponent } from './components/bless/bless.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, EladComponent, RonniComponent, KobiComponent],
+  imports: [ImageComponent, QuestionComponent, GiftComponent, BlessComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss', 
+  providers: [AppStore]
 })
 export class AppComponent {
-  title = 'adva-bd';
+  readonly store = inject(AppStore);
 }

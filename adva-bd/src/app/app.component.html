@@ -1,1 +1,17 @@
-<app-kobi/>
+@let step=store.currentStep();
+
+@if(step.type === 'Image') {
+    <app-image [step]="step"/>
+} 
+
+@if (step.type === 'Question') {
+    <app-question [step]="step"/>
+}
+
+@if (step.type === 'Bless') {
+    <app-bless [step]="step"/>
+}
+
+@if (step.type === 'Gift') {
+    <app-gift [step]="step"/>
+}
