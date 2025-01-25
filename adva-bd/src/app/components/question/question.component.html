@@ -1,1 +1,10 @@
-<p>question works!</p>
+@let question = step();
+<h2 class="question-caption">{{ question.caption }}</h2>
+<ul class="answers">
+  @for(answer of question.answers; track $index) {
+  <li class="answer">
+    {{ answer }}
+  </li>
+
+  }
+</ul>

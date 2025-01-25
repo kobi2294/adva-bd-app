@@ -23,6 +23,8 @@ export interface StepTaskGift {
     readonly text: string[];
 }
 
-export type StepTask = StepTaskQuestion | StepTaskBless | StepTaskImage | StepTaskGift;
+export type StepTask = (StepTaskQuestion | StepTaskBless | StepTaskImage | StepTaskGift) & {
+    readonly theme: '#a600ff' | '#00b0ff' | '#00ff6a';
+};
 
 export type StepTaskType = StepTask['type'];

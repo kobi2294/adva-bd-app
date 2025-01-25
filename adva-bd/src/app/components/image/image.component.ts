@@ -9,4 +9,5 @@ import { StepTaskImage } from '../../models/step-task';
 })
 export class ImageComponent {
   readonly step = input.required<StepTaskImage>();
+  
 }
