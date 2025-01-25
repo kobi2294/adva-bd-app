@@ -5,7 +5,7 @@ export const STEPS: StepTask[] = [
     {
         type: 'Image', 
         url: 'images/ronni-1.jpg',
-        done: true, 
+        done: false, 
         theme: '#a600ff'
     }, 
     {
@@ -17,7 +17,7 @@ export const STEPS: StepTask[] = [
     {
         type: 'Image', 
         url: 'images/ronni-2.jpg',
-        done: true, 
+        done: false, 
         theme: '#a600ff'
     }, 
     {
@@ -29,7 +29,7 @@ export const STEPS: StepTask[] = [
     {
         type: 'Image', 
         url: 'images/ronni-3.jpg',
-        done: true, 
+        done: false, 
         theme: '#a600ff'
     }, 
     {
@@ -41,7 +41,7 @@ export const STEPS: StepTask[] = [
     {
         type: 'Bless', 
         who: 'Ronni', 
-        done: true, 
+        done: false, 
         theme: '#a600ff'
     }, 
     {
@@ -52,13 +52,13 @@ export const STEPS: StepTask[] = [
             `זה לא קראנצ'י נגט וגם לא ביג מאק`, 
             'זה מתוק מאד בפה למרות שלא ממתק '
         ],
-        done: true, 
+        done: false, 
         theme: '#00b0ff'
     },
     {
         type: 'Image', 
         url: 'images/elad-1.jpg',
-        done: true, 
+        done: false, 
         theme: '#a600ff'
     }, 
     {
@@ -70,7 +70,7 @@ export const STEPS: StepTask[] = [
     {
         type: 'Image', 
         url: 'images/elad-2.jpg',
-        done: true, 
+        done: false, 
         theme: '#a600ff'
     }, 
     {
@@ -82,7 +82,7 @@ export const STEPS: StepTask[] = [
     {
         type: 'Image', 
         url: 'images/elad-3.jpg',
-        done: true, 
+        done: false, 
         theme: '#a600ff'
     }, 
     {
@@ -94,7 +94,7 @@ export const STEPS: StepTask[] = [
     {
         type: 'Bless', 
         who: 'Elad', 
-        done: true, 
+        done: false, 
         theme: '#a600ff'
     }, 
     {
@@ -105,13 +105,13 @@ export const STEPS: StepTask[] = [
             `ועכשיו כשסיימת להראות מהמם`, 
             'בארון של אלעד ממתין לך המב...'
         ],
-        done: true, 
+        done: false, 
         theme: '#00b0ff'
     },
     {
         type: 'Image', 
         url: 'images/kobi-1.jpg',
-        done: true, 
+        done: false, 
         theme: '#a600ff'
     }, 
     {
@@ -123,7 +123,7 @@ export const STEPS: StepTask[] = [
     {
         type: 'Image', 
         url: 'images/kobi-2.jpg',
-        done: true, 
+        done: false, 
         theme: '#a600ff'
     }, 
     {
@@ -135,7 +135,7 @@ export const STEPS: StepTask[] = [
     {
         type: 'Image', 
         url: 'images/kobi-3.jpg',
-        done: true, 
+        done: false, 
         theme: '#a600ff'
     }, 
     {
@@ -147,7 +147,7 @@ export const STEPS: StepTask[] = [
     {
         type: 'Image', 
         url: 'images/kobi-4.jpg',
-        done: true, 
+        done: false, 
         theme: '#a600ff'
     }, 
     {
@@ -159,7 +159,7 @@ export const STEPS: StepTask[] = [
     {
         type: 'Bless', 
         who: 'Kobi', 
-        done: true, 
+        done: false, 
         theme: '#a600ff'
     }, 
     {
@@ -172,7 +172,7 @@ export const STEPS: StepTask[] = [
             `אז לקחתי סיכון עם מתנה מפורטת`,
             `בתיק הלפטופ מחכה לך מתנה ממגנטת`
         ],
-        done: true, 
+        done: false, 
         theme: '#00b0ff'
     },
     {
@@ -183,7 +183,7 @@ export const STEPS: StepTask[] = [
             `וצפוף ומלא ומקום לא זמין`, 
             'את כל המיכשור יחדיו להטעין', 
         ],
-        done: true, 
+        done: false, 
         theme: '#00ff6a'
     },
     {
@@ -194,7 +194,7 @@ export const STEPS: StepTask[] = [
             'ויודע היטב כי הקשבתי רוב קשב', 
             'שיש חלק אחרון שמגיע לרכב', 
         ],
-        done: true, 
+        done: false, 
         theme: '#00b0ff'
     },
     {

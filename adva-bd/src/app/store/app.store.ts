@@ -1,6 +1,6 @@
-import {signalStore, withComputed, withState} from '@ngrx/signals';
+import {patchState, signalStore, withComputed, withMethods, withState} from '@ngrx/signals';
 import { initialSlice } from './app.slice';
-import { currentStep, currentStepIndex } from './app.updaters';
+import { currentStep, currentStepIndex, toggleStep } from './app.updaters';
 import { computed } from '@angular/core';
 
 export const AppStore = signalStore(
@@ -8,5 +8,10 @@ export const AppStore = signalStore(
     withComputed(store => ({
         currentStepIndex: computed(() => currentStepIndex(store.steps())), 
         currentStep: computed(() => currentStep(store.steps())),
+    })), 
+    withMethods(store => ({
+        nextStep() {
+            patchState(store, toggleStep())
+        }
     }))
 )

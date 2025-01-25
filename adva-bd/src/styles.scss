@@ -30,6 +30,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   --p-700: oklch(from var(--base-color) 24% 0.08 h);
   --p-800: oklch(from var(--base-color) 16% 0.06 h);
   --p-900: oklch(from var(--base-color) 08% 0.05 h);
+
+  --error-color: #ff0000;
+  --e-50: oklch(from var(--error-color)  98% 0.03 h);
+  --e-100: oklch(from var(--error-color) 92% 0.05 h);
+  --e-200: oklch(from var(--error-color) 86% 0.06 h);
+  --e-300: oklch(from var(--error-color) 74% 0.08 h);
+  --e-400: oklch(from var(--error-color) 58% 0.11 h);
+  --e-500: oklch(from var(--error-color) 40% 0.14 h);
+  --e-600: oklch(from var(--error-color) 32% 0.11 h);
+  --e-700: oklch(from var(--error-color) 24% 0.08 h);
+  --e-800: oklch(from var(--error-color) 16% 0.06 h);
+  --e-900: oklch(from var(--error-color) 08% 0.05 h);
+
 }
 
 .theme {

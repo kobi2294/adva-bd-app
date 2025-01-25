@@ -1,96 +1,118 @@
 :host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, var(--p-100), var(--p-300), var(--p-200));
+  animation: background-dance 5s infinite;
+  padding: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+
+  .question-caption {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--p-900);
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 0 16px;
+    text-shadow: 2px 2px var(--p-200), -2px -2px var(--p-50);
+    z-index: 1;
+  }
+
+  .answers {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(135deg, var(--p-100), var(--p-300), var(--p-200));
-    animation: background-dance 5s infinite;
-    padding: 16px;
-    box-sizing: border-box;
-    overflow: hidden;
-    position: relative;
-  
-    .question-caption {
-      font-size: 2rem;
+    max-width: 400px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+
+    .answer {
+      background-color: var(--p-100);
+      color: var(--p-800);
+      padding: 16px;
+      margin: 12px 0;
+      border-radius: 16px;
+      font-size: 1.2rem;
       font-weight: bold;
-      color: var(--p-900);
       text-align: center;
-      margin-bottom: 24px;
-      padding: 0 16px;
-      text-shadow: 2px 2px var(--p-200), -2px -2px var(--p-50);
-      z-index: 1;
-    }
-  
-    .answers {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      max-width: 400px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      z-index: 1;
-  
-      .answer {
-        background-color: var(--p-100);
-        color: var(--p-800);
-        padding: 16px;
-        margin: 12px 0;
-        border-radius: 16px;
-        font-size: 1.2rem;
-        font-weight: bold;
-        text-align: center;
-        border: 3px solid var(--p-200);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transform: rotate(-2deg);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-  
-        /* Random rotation for fun */
-        &:nth-child(odd) {
-          transform: rotate(2deg);
-        }
-  
-        &:active {
-          transform: scale(0.95) rotate(0deg);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-  
-        /* Fun confetti burst inside */
-        &::before {
-          content: "🎉";
-          font-size: 1.5rem;
+      border: 3px solid var(--p-200);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform: rotate(-2deg);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      &:nth-child(odd) {
+        transform: rotate(2deg);
+      }
+
+      &:active {
+        transform: scale(0.95) rotate(0deg);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Correct Answer */
+      &.correct {
+        background-color: var(--p-500);
+        color: var(--p-50);
+        border-color: var(--p-600);
+        box-shadow: 0 8px 16px var(--p-600);
+        position: relative;
+
+        &::after {
+          content: "✔ תשובה נכונה!";
+          font-size: 1rem;
+          font-weight: bold;
+          color: var(--p-50);
+          background-color: var(--p-700);
+          padding: 4px 8px;
+          border-radius: 12px;
           position: absolute;
           top: -10px;
           right: -10px;
-          opacity: 0.8;
-          transform: rotate(15deg);
+          transform: rotate(-10deg);
         }
-  
+      }
+
+      /* Incorrect Answer */
+      &.incorrect {
+        background-color: var(--e-300);
+        color: var(--e-800);
+        border-color: var(--e-400);
+        position: relative;
+
         &::after {
-          content: "🎈";
-          font-size: 1.5rem;
+          content: "✖ טעות!";
+          font-size: 1rem;
+          font-weight: bold;
+          color: var(--e-100);
+          background-color: var(--e-600);
+          padding: 4px 8px;
+          border-radius: 12px;
           position: absolute;
-          bottom: -10px;
-          left: -10px;
-          opacity: 0.8;
-          transform: rotate(-15deg);
+          top: -10px;
+          right: -10px;
+          transform: rotate(10deg);
         }
       }
     }
   }
-  
-  /* Background Animation */
-  @keyframes background-dance {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+}
+
+/* Background Animation */
+@keyframes background-dance {
+  0% {
+    background-position: 0% 50%;
   }
-  
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
