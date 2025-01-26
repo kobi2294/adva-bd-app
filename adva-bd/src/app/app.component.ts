@@ -4,10 +4,11 @@ import { ImageComponent } from './components/image/image.component';
 import { QuestionComponent } from './components/question/question.component';
 import { GiftComponent } from './components/gift/gift.component';
 import { BlessComponent } from './components/bless/bless.component';
+import { HomeComponent } from './components/home/home.component';
 
 @Component({
   selector: 'app-root',
-  imports: [ImageComponent, QuestionComponent, GiftComponent, BlessComponent],
+  imports: [ImageComponent, QuestionComponent, GiftComponent, BlessComponent, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss', 
   providers: [AppStore], 

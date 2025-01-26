@@ -4,6 +4,13 @@ import { QUESTIONS } from "./questions";
 export const STEPS: StepTask[] = [
     {
         type: 'Image', 
+        url: 'images/adva-1.jpg',
+        done: false,
+        theme: 'cyan',
+        caption: 'אפליקציית היומולדת של אדוה'
+    },
+    {
+        type: 'Image', 
         url: 'images/ronni-1.jpg',
         done: false, 
         theme: 'orange', 

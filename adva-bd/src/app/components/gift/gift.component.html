@@ -1,1 +1,9 @@
-<p>gift works!</p>
+@let st = step();
+
+<h1>יש לנו מתנה בשבילך...</h1>
+
+@for(t of st.text; track $index) {
+    <p>{{ t }}</p>
+}
+
+<button (click)="store.nextStep()">מצאתי!!! 🎁</button>

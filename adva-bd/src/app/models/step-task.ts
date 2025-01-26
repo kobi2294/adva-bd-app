@@ -20,8 +20,12 @@ export interface StepTaskGift {
     readonly text: string[];
 }
 
-export type StepTask = (StepTaskQuestion | StepTaskBless | StepTaskImage | StepTaskGift) & {
-    readonly theme: '#a600ff' | '#00b0ff' | '#00ff6a' | '#ff006a' | 'brown' | 'pink' | 'blue' | 'green' | 'orange' | 'purple';
+export interface StepTaskHome {
+    readonly type: 'Home';
+}
+
+export type StepTask = (StepTaskQuestion | StepTaskBless | StepTaskImage | StepTaskGift | StepTaskHome) & {
+    readonly theme: '#a600ff' | '#00b0ff' | '#00ff6a' | '#ff006a' | 'brown' | 'pink' | 'blue' | 'green' | 'orange' | 'purple' | 'cyan';
     readonly done: boolean;
 };
 

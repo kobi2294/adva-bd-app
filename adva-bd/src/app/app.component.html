@@ -2,6 +2,9 @@
 
 @if (step) {
     @switch (step.type) {
+        @case ('Home') {
+            <app-home/>
+        }
         @case('Image') {
             <app-image [step]="step"/>
         }
