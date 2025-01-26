@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100%; /* Full viewport height */
     padding: 16px;
     background: url('../../../../public/images/together-bg.jpg') top/contain no-repeat, linear-gradient(135deg, var(--p-800), var(--p-300)); /* Background image */
     box-sizing: border-box;
