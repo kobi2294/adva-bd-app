@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { AppStore } from '../../store/app.store';
 
 @Component({
   selector: 'app-together',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './together.component.scss'
 })
 export class TogetherComponent {
+  readonly store = inject(AppStore);
 
 }

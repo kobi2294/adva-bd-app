@@ -82,7 +82,7 @@ export const STEPS: StepTask[] = [
         type: 'Image', 
         url: 'images/elad-2.jpg',
         done: false, 
-        theme: '#a600ff', 
+        theme: 'blue', 
         caption: 'ברגע של איכות ביחד'
     }, 
     {
@@ -108,7 +108,7 @@ export const STEPS: StepTask[] = [
         type: 'Bless', 
         who: 'Elad', 
         done: false, 
-        theme: '#a600ff'
+        theme: 'cyan'
     }, 
     {
         type: 'Gift', 
@@ -119,13 +119,13 @@ export const STEPS: StepTask[] = [
             'בארון של אלעד ממתין לך המב...'
         ],
         done: false, 
-        theme: '#00b0ff'
+        theme: 'purple'
     },
     {
         type: 'Image', 
         url: 'images/kobi-1.jpg',
         done: false, 
-        theme: '#a600ff', 
+        theme: 'orange', 
         caption: 'איזה כיףףףף לנו'
     }, 
     {
@@ -178,7 +178,7 @@ export const STEPS: StepTask[] = [
         type: 'Bless', 
         who: 'Kobi', 
         done: false, 
-        theme: '#a600ff'
+        theme: 'green'
     }, 
     {
         type: 'Gift', 
@@ -218,7 +218,7 @@ export const STEPS: StepTask[] = [
     {
         type: 'Bless', 
         who: 'Together', 
-        done: true, 
+        done: false, 
         theme: '#a600ff'
     }
 ]
