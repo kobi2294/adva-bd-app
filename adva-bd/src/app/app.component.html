@@ -1,25 +1,29 @@
 @let step=store.currentStep();
 
-@if (step) {
-    @switch (step.type) {
-        @case ('Home') {
-            <app-home/>
-        }
-        @case('Image') {
-            <app-image [step]="step"/>
-        }
-        @case('Question') {
-            <app-question [step]="step"/>
-        }
-        @case('Bless') {
-            <app-bless [step]="step"/>
-        }
-        @case('Gift') {
-            <app-gift [step]="step"/>
-        }
-        @default {
-        }        
-    }    
-} @else {
-    <h1>מזל טוב!!!</h1>
-}
+<div class="root">
+    @if (step) {
+        @switch (step.type) {
+            @case ('Home') {
+                <app-home/>
+            }
+            @case('Image') {
+                <app-image [step]="step"/>
+            }
+            @case('Question') {
+                <app-question [step]="step"/>
+            }
+            @case('Bless') {
+                <app-bless [step]="step"/>
+            }
+            @case('Gift') {
+                <app-gift [step]="step"/>
+            }
+            @default {
+            }        
+        }    
+    } @else {
+        <h1>מזל טוב!!!</h1>
+    }
+    
+</div>
+

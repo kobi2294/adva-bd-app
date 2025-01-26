@@ -1,17 +1,13 @@
 :host {
     display: flex;
     flex-direction: column;
-    align-items: center;
     flex: 1;
 
-    app-elad, app-ronni, app-kobi {
-        max-width: 400px;
+    div.root {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        max-height: calc(100vh);
     }
 
-    .a {
-        width: 100px;
-        height: 50px;
-        border: 1px solid black;
-
-    }
 }
